@@ -14,7 +14,7 @@ interface FloatingNavProps {
   children?: React.ReactNode;
 }
 
-export const Testt: React.FC<FloatingNavProps> = ({ navItems, className, children }) => {
+export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className, children }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
   const [shouldHide, setShouldHide] = useState(false);
