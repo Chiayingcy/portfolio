@@ -71,13 +71,15 @@ const Home = () => {
     <Layout title={currentSection}>
       <main className="min-h-screen flex flex-col items-center">
         <div className="relative w-full md:block hidden">
-        <FloatingNav navItems={NAVITEMS}>
+          <FloatingNav navItems={NAVITEMS}>
           <ToggleTheme /> 
         </FloatingNav>
         </div>
-        {/* <Testt navItems={navItems}>
-          <ToggleTheme/>
-        </Testt> */}
+        {/* <div className="relative w-full md:block hidden">
+          <Testt navItems={navItems}>
+            <ToggleTheme />
+          </Testt>
+        </div> */}
 
         <Hero />
         <About />
