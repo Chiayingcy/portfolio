@@ -11,6 +11,7 @@ export const NAVITEMS: NavItems[] = [
   {
       name: "Home",
       link: "#home",
+      
   },
   {
       name: "About",
@@ -24,6 +25,10 @@ export const NAVITEMS: NavItems[] = [
       name: "Contact",
       link: "#contact",
   },
+  {
+    name: "Trading",
+    link: "/trading",
+},
 ];
 
 export const skills = [

@@ -17,7 +17,7 @@ class PortfolioController extends Controller
         return Inertia::render('About');
     }
 
-    public function prjects()
+    public function projects()
     {
         return Inertia::render('Projects');
     }

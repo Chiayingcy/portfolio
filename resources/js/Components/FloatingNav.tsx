@@ -45,16 +45,16 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className, c
     }
   });
 
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
-    if (targetId) {
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
+  // const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  //   event.preventDefault();
+  //   const targetId = event.currentTarget.getAttribute("href");
+  //   if (targetId) {
+  //     const targetElement = document.querySelector(targetId);
+  //     if (targetElement) {
+  //       targetElement.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   }
+  // };
 
   return (
     <AnimatePresence mode="wait">
@@ -72,7 +72,6 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className, c
           <Link
             key={`link-${idx}`}
             href={navItem.link}
-            onClick={handleClick}
             className="relative flex items-center space-x-1 text-gray-800 font-semibold dark:text-gray-300 hover:text-gray-500"
             style={{ color: 'var(--floatingnav-text)' }}
           >

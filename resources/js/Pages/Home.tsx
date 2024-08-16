@@ -12,29 +12,37 @@ import Layout from '@/Layouts/Layout'
 import { FloatingNav } from '@/Components/FloatingNav'
 import { Testt } from '@/Components/ui/Testt'
 import { IconHome, IconMessage, IconUser } from '@tabler/icons-react'
+import Trading from './Trading'
 
 
 const Home = () => {
 
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "About",
-      link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-  ];
+  // const navItems = [
+  //   {
+  //     name: "Home",
+  //     link: "/",
+  //     icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  //   },
+  //   {
+  //     name: "About",
+  //     link: "/about",
+  //     icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  //   },
+  //   {
+  //     name: "Contact",
+  //     link: "/contact",
+  //     icon: (
+  //       <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+  //     ),
+  //   },
+  //   {
+  //     name: "Trading",
+  //     link: "/trading",
+  //     icon: (
+  //       <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+  //     ),
+  //   },
+  // ];
 
 
   const [currentSection, setCurrentSection] = useState('Home');

@@ -30,6 +30,15 @@ Route::get('/about', [PortfolioController::class, 'about'])->name('about');
 Route::get('/projects', [PortfolioController::class, 'projects'])->name('projects');
 Route::get('/contact', [PortfolioController::class, 'contact'])->name('contact');
 
+use App\Http\Controllers\TradingDataController;
+Route::get('/trading', [TradingDataController::class, 'index'])->name('trading');
+Route::post('trading-data', [TradingDataController::class, 'store']);
+Route::put('trading-data/{id}', [TradingDataController::class, 'update']);
+Route::delete('trading-data/{id}', [TradingDataController::class, 'destroy']);
+
+
+
+
 
 Route::get('/testt', [PortfolioController::class, 'testt'])->name('testt');
 
