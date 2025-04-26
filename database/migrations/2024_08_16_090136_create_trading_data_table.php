@@ -4,13 +4,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePropfirmTable extends Migration
+class CreateTradingDataTable extends Migration
 {
     public function up()
     {
         Schema::create('propfirm', function (Blueprint $table) {
             $table->id();
-            $table->string('prop_firm');
+            $table->string('propfirm');
             $table->string('capital');
             $table->decimal('price', 10, 2);
             $table->decimal('discount', 5, 2);
